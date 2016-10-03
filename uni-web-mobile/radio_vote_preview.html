@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Uni招募帖-投票多选</title>
+    <link rel="stylesheet" href="css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyles2.0.css">
+    <link rel="stylesheet" type="text/css" href="css/preview.css">
+</head>
+<body style="background: #fafafa ;">
+<section class="ui-container">
+    <div class="ui-col mt30 mb50">
+        <div class="ui-row ui-whitespace ">
+            <div class="ui-col-90 uni-box-jz  bottom_line">
+                <i class="fl mr10 mt1"><img src="img/icon/icon_03.png" width="20" height="20" alt="book"></i>
+                <h1 id="title" class="f18 bold ml30"></h1>
+            </div>
+            <div class="ui-col-90 uni-box-jz">
+                <ul class="ui-col pr30 ml30 mr30 uni-content-ul mt18 f14">
+                    <li><span>投票发起者</span>：<span id="initiatorName"></span></li>
+                    <li><span>来自组织</span>：<span id="groupName"></span></li>
+                    <li><span>投票性质</span>：<span>单选，<span id="anonymous"></span></span></li>
+                    <li><span>投票说明</span>：<span id="detail"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ui-row ui-whitespace ">
+            <div class="ui-col uni-box-jz">
+                <div id="list" class="ui-form mt30">
+
+                </div>
+
+            </div>
+        </div>
+        <div class="ui-col-50 uni-box-jz ">
+            <div class="mt40 ui-btn-group">
+                <button id="voteSubmit" class="ui-btn-lg uni-black-brd-btn f16" disabled>
+                    确定提交
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="ui-container ">
+        <div class="ui-col ui-col-100 tc mt50">
+            <p class="tc f12 mb10 plr10" style="clear: both;">
+                <a id="xia" class="blue_a" href="aboutUni.html">了解Uniwork</a>
+            </p>
+        </div>
+        <div class="ui-col pt18 mask mt135">
+            <div class="ui-col ui-col-20"><img class="ml30 _logo" src="img/logo2.png" alt="logo" ></div>
+            <div class="ui-col ui-col-80"><p class="f12 plr20 khcolor">  Uniwork，智能化组织管理助手，
+                如果你也是管理者，欢迎点此下载应用</p></div>
+        </div>
+    </div>
+
+</section>
+<script src="js/lib/zeptojs/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+<script src="js/tools/getUrlParmars.js"></script>
+<script src="js/tools/preview_parameter.js"></script>
+<script src="js/tools/PreviewVoteRadio.js"></script>
+</body>
+
+</html>

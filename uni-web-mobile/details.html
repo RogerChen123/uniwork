@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Uni小助手</title>
+    <link rel="stylesheet" href="css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyles2.0.css">
+    <link rel="stylesheet" type="text/css" href="css/pull_refresh.css">
+</head>
+
+<body style="background: #fafafa;">
+<!--<header class="ui-header ui-header-black ui-border-b">
+    <i class="ui-icon-return" onclick="history.back()"></i>
+    <h1>Uni小助手</h1>
+</header>-->
+<div class="ui-footer ui-footer-stable ui-btn-group ui-border-t">
+    <div class="ui-input ui-border-radius">
+        <input id="sendContent" type="text" maxlength="200" name="message" value="" placeholder="我也说一句...">
+    </div>
+    <button id="sendBtn" class=" ui-btn uni-black-btn">发送</button>
+</div>
+
+<section class="ui-container ui-center">
+    <div id="wrapper">
+        <div id="scroller">
+            <div id="pullDown">
+                <span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+            </div>
+
+            <div id="thelist">
+
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/iscroll.js"></script>
+<script src="js/tools/getUrlParmars.js"></script>
+<script src="js/tools/parameter.js"></script>
+<script src="js/tools/tips.js"></script>
+<script src="js/util/errorhandler.js"></script>
+<script src="js/tools/sendMessage.js"></script>
+
+</body>
+
+</html>

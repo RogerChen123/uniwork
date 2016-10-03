@@ -1,0 +1,10 @@
+.ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled, .ui-btn.disabled:before, .disabled.ui-btn-lg:before, .disabled.ui-btn-s:before, .ui-btn:disabled:before, .ui-btn-lg:disabled:before, .ui-btn-s:disabled:before {
+    border: 3px solid #000;
+}
+.ui-btn.disabled, .disabled.ui-btn-lg, .disabled.ui-btn-s, .ui-btn:disabled, .ui-btn-lg:disabled, .ui-btn-s:disabled {
+    border: 0;
+    color: #000;
+    background: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}

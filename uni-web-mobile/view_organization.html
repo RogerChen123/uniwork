@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>查看我的组织</title>
+    <link rel="stylesheet" href="css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyles2.0.css">
+    <style>
+        html {
+
+            font-size: 62.5%; /* 10÷16=62.5% */
+            height: 100%;
+
+        }
+
+        .ui-list > li {
+            position: relative;
+            margin-left: 0px;
+            padding-left: 15px;
+            display: -webkit-box;
+        }
+
+        #mask {
+            position: absolute;
+            top: 0px;
+            filter: alpha(opacity=70);
+            background-color: #000;
+            z-index: 1002;
+            left: 0px;
+            opacity: 0.70;
+            -moz-opacity: 0.70;
+            display: none;
+        }
+
+        #box {
+            height: 200px;
+            width: 300px;
+            position: absolute;
+            z-index: 1003;
+            background: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        .hui {
+            background: #d3d3d3;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body style="background: #fafafa;">
+<div id="mask">
+</div>
+<div id="box" class="ui-col ui-col-100">
+    <div>
+        <div class="ui-col ui-col-100 mt40">
+            <p class="tc f18 bold">你是否确认退出该组织？</p>
+            <div class="ui-col-90 uni-box-jz ">
+                <div class="mt40 ui-btn-group mb25">
+                    <button id="confirmBtn" class="ui-btn-lg ui-col-50 uni-red-btn f14">
+                        确认
+                    </button>
+                    <button id="cancelBtn" class="ui-btn-lg ui-col-50 uni-gray-btn f14">
+                        取消
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="ui-container">
+    <div class="ui-col ui-col-100 hui"><p>你目前一共加入了<span>4</span>组织。</p></div>
+    <ul class="ui-list ui-border-tb">
+        <li class="ui-border-t">
+            <div class="ui-avatar-s">
+                <span class="system_head"></span>
+            </div>
+            <div class="ui-list-info">
+                <ul class="uni-list">
+                    <li><h4 class="f14 bold">会计级班测测法学院会计会凉凉群（50人）</h4></li>
+                    <li class="f12"><span>组织者：</span><span>李易峰</span></li>
+                    <li class="f12"><span>加入时间：</span><span>2016-3-16</span></li>
+                </ul>
+            </div>
+            <div id="exit" class="ui-btn uni-black-brd-btn mt10 mr10">退出</div>
+        </li>
+
+    </ul>
+</section>
+<script src="js/lib/zeptojs/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+<script src="js/page-jump.js"></script>
+<script src="js/tools/search_box.js"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $("#exit").click(function () {
+
+            showMask();
+
+        });
+        $("#confirmBtn").click(function () {
+
+            hideMask();
+
+        });
+        $("#cancelBtn").click(function () {
+
+            hideMask();
+
+        });
+
+    });
+    //显示遮罩层
+    function showMask() {
+        $("#mask").css("height", $(document).height());
+        $("#mask").css("width", $(document).width());
+        $("#mask").show();
+        $("#box").show();
+    }
+    //隐藏遮罩层
+    function hideMask() {
+
+        $("#mask").hide();
+        $("#box").hide();
+    }
+
+
+</script>
+
+</body>
+
+</html>

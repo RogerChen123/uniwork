@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>我的消息</title>
+    <link rel="stylesheet" href="css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyles2.0.css">
+</head>
+
+<body>
+    <header class="ui-header ui-header-black ui-border-b">
+        <i class="ui-icon-return" onclick="history.back()"></i>
+        <h1>我的消息</h1>
+    </header>
+    <section class="ui-container">
+        <div class="ui-searchbar-wrap ui-border-b">
+            <div class="ui-searchbar ui-border-radius">
+                <i class="ui-icon-search"></i>
+                <div class="ui-searchbar-text">搜索</div>
+                <div class="ui-searchbar-input">
+                    <input value="" type="tel" placeholder="搜索" autocapitalize="off">
+                </div>
+                <i class="ui-icon-close"></i>
+            </div>
+            <button class="ui-searchbar-cancel">取消</button>
+        </div>
+        <ul class="ui-list ui-border-tb">
+            <li class="ui-border-t" data-href="details.html">
+                <div class="ui-avatar">
+                    <span class="system_head"></span>
+                </div>
+                <div class="ui-list-info">
+                    <h4 class="ui-nowrap">Uni小助手<span class="time"> 7:06</span></h4>
+                    <p class="ui-nowrap">欢迎注册Uni，亲等你好久啦，希望再今后的日子里与你携手前进！有什么意见也可以反馈给我们。</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="js/lib/zeptojs/zepto.min.js"></script>
+    <script src="js/frozen.js"></script>
+    <script src="js/page-jump.js"></script>
+    <script src="js/tools/search_box.js"></script>
+</body>
+
+</html>

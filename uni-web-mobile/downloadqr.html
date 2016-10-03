@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Uniwork-APP下载</title>
+    <link rel="stylesheet" href="css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyles2.0.css">
+    <style>
+        html {
+
+            font-size: 62.5%; /* 10÷16=62.5% */
+            height: 100%;
+
+        }
+
+        body {
+            background: url("img/download/down_load.png") no-repeat center top;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            font-size: 14px;
+            font-size: 1.4rem; /* 12÷10=1.2 */
+            -webkit-user-select: auto; /* Chrome all / Safari all /opera15+*/
+            -moz-user-select: auto; /* Firefox all */
+            -ms-user-select: auto; /* IE 10+ */
+            user-select: auto;
+        }
+
+        #mask {
+            position: absolute;
+            top: 0px;
+            filter: alpha(opacity=90);
+            background-color: #000;
+            z-index: 1002;
+            left: 0px;
+            opacity: 0.90;
+            -moz-opacity: 0.90;
+            display: none;
+        }
+
+    </style>
+</head>
+
+<body>
+<div id="mask">
+    <div class="ui-col ui-col-100 tc mt30"><img class="mb10" src="img/download/mask_content.png" alt="" width="250"
+                                                style=" z-index: 9999;"></div>
+</div>
+<section class="ui-container">
+    <div class="ui-col ui-col-100 mt50">
+        <div class="ui-col ui-col-100 tc">
+            <img class="mb10" src="img/download/logo4.png" alt="" width="100">
+        </div>
+        <div id="ios" class="ui-col ui-col-100 tc mt50">
+            <a href="https://itunes.apple.com/cn/app/uni-help/id1080987410"> <img class="mb10"
+                                                                                  src="img/download/ios_btn.png" alt=""
+                                                                                  width="220"></a>
+        </div>
+        <div id="android" class="ui-col ui-col-100 tc mt18 mb10">
+            <a href="http://simpulife.oss-cn-beijing.aliyuncs.com/uni2.1.2-release.apk"> <img class="mb10"
+                                                                                              src="img/download/android_btn.png"
+                                                                                              alt="" width="220"></a>
+        </div>
+
+        <div class="ui-col ui-col-100 tc  mb50">
+            <img class="mb10" src="img/download/copyright.png" alt="" width="250">
+        </div>
+        <div class="ui-col ui-col-100 tc mt30">
+            <img class="mb10" src="img/download/linian.png" alt="" width="220">
+        </div>
+    </div>
+</section>
+<script src="js/lib/zeptojs/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+<script src="js/util/errorhandler.js"></script>
+<script src="js/tools/isWeixinjump.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+body {
+    background: #fff;
+}
+
+.ui-nowrap .time {
+    position: absolute;
+    right: 30px;
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.ui-header-black,
+.ui-footer-black {
+    background-color: #131314;
+    color: #fff;
+}
+
+.ui-btn-black {
+    background-color: #131314;
+    color: #fff;
+    background-image: none;
+}
+
+.message_content {
+    width: 100%;
+    clear: both;
+    float: left;
+}
+
+.face {
+    float: left;
+    width: 10%;
+}
+
+.face img {
+    width: 100%;
+    max-width: 60px;
+    clear: both;
+}
+
+.message {
+    background-color: #ccc;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.messageleft {
+    background-color: #ccc;
+    padding: 10px;
+    margin-left: 5px;
+    margin-right: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.message:before {
+    position: absolute;
+    content: "\00a0";
+    width: 0px;
+    height: 0px;
+    border-width: 8px 18px 8px 0;
+    border-style: solid;
+    border-color: transparent #cccccc transparent transparent;
+    top: 15px;
+    left: -18px;
+}
+
+.messageleft:before {
+    position: absolute;
+    content: "\00a0";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-width: 8px 0px 8px 18px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ccc;
+    right: -18px;
+    top: 15px;
+}
+
+.blankdv {
+    height: 10px;
+}
+
+.p10 {
+    padding: 10px;
+}
+
+.p5 {
+    padding: 5px;
+}
+
+.time-center {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+    color: #ccc;
+    margin-top: 10px;
+}
+
+.time-left {
+    float: left;
+    width: 100%;
+    text-align: left;
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+.content-box {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.box {
+    display: block;
+}
+
+.input-text {
+    width: 100%;
+    height: 40px;
+    background: #f0f0f0;
+    line-height: 40px;
+    border: none;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.tc {
+    text-align: center;
+}
+
+.tl {
+    text-align: left;
+}
+
+.pt25 {
+    padding-top: 25px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+.mt127{
+
+    margin-top: 127px;
+}
+.font-white {
+    color: #ffffff;
+}
+
+.mt50 {
+    margin-top: 50px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mb25 {
+    margin-bottom: 25px;
+}
+
+.ml50 {
+    margin-left: 50px;
+}
+
+.mr50 {
+    margin-right: 50px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.yahe {
+    font-family: "微软雅黑"
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.mlf10 {
+    margin-left: -10px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.blue {
+    color: #0000ff;
+}
+
+.ios-btn {
+    background: #3682fe;
+    color: #ffffff;
+}
+
+.android-btn {
+    background: #0bb313;
+    color: #ffffff;
+}
+
+.uni-navbar-header {
+    background: #3682fe;
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
+.uni-navbar-header .logo {
+    position: absolute;
+    top: 11px;
+    left: 10px;
+}
+
+.uni-banner {
+    background: #d3deef;
+    min-height: 180px;
+    width: 100%;
+}
+
+.ui-placehold-img {
+    padding-top: 5px;
+}
+
+.uni-black-btn {
+    background-color: #313131;
+    color: #ffffff;
+    border-radius: 0;
+}
+.ui-btn-lg{
+    background-image: none;
+}

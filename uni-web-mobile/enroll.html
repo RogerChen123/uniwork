@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title>Uni招募帖</title>
+    <link rel="stylesheet" href="css/frozen.css">
+    <link rel="stylesheet" type="text/css" href="css/mystyles2.0.css">
+</head>
+<body style="background: #fafafa;">
+<section class="ui-container">
+    <div class="ui-col mt30 mb50">
+        <div class="ui-row ui-whitespace ">
+            <div class="ui-col-90 uni-box-jz  bottom_line">
+                <i class="fl mr10 mt1"><img src="img/icon/icon_01.png" width="18" height="23" alt="book"></i>
+                <h1 id="title" class="f18 bold ml30"></h1>
+            </div>
+            <div class="ui-col-90 uni-box-jz">
+                <ul class="ui-col pr30 ml30 mr30 uni-content-ul f14 mt18">
+                    <li><span>通知发布者</span>：<span id="initiatorName"></span></li>
+                    <li><span>来自组织</span>：<span id="groupName"></span></li>
+                    <li><span>通知发布时间</span>：<span id="createDate"></span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="ui-row ui-whitespace mt7">
+            <div class="ui-col-90 uni-box-jz">
+                <i class="fl mr10 mt4"><img src="img/icon/icon_02.png" width="18" height="18" alt="book"></i>
+                <h2 class=" bold ml30 f18">通知内容详情：</h2>
+            </div>
+            <div class="ui-col-90 uni-box-jz">
+                <ul class="ui-col pr30 ml30 mr30 uni-content-ul f14 mt12">
+                    <li><span id="detail"></span></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="ui-col-90 uni-box-jz  ">
+            <div class="mt40 ui-btn-group ">
+                <button id="enrollAccepted" class="ui-btn-lg uni-black-brd-btn f16" disabled>
+                    我要参加
+                </button>
+                <button id="enrollDenied" class="ui-btn-lg uni-black-brd-btn f16" disabled>
+                    无法参加
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="deniedReason" class="ui-row ui-whitespace mb30 hide">
+        <div class="mt30">
+            <ul class="ui-row ui-whitespace ">
+                <li class="ui-col f14 ui-col-100 mb10">
+                    无法参加理由：
+                </li>
+                <li class="ui-col mb10">
+                    <div class="ui-col ui-col-100">
+                        <input id="reasonContent" class="input-text1 f14" type="text"
+                               placeholder="请填写无法参加的理由">
+                    </div>
+                </li>
+            </ul>
+            <div class="ui-col">
+                <div class="ui-btn-wrap">
+                    <button id="submitReason" class="ui-btn-lg f14  uni-black-brd-btn">
+                        提交
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui-row ui-whitespace">
+        <div class="ui-col ui-col-100 tc mt50">
+            <p class="tc f12 mb10 plr10" style="clear: both;">
+                <a id="xia" class="blue_a" href="aboutUni.html">了解Uniwork</a>
+            </p>
+        </div>
+    </div>
+    <div class=" ui-col pt18 mask mt135">
+        <a href="downloadqr.html">
+            <div class="ui-col ui-col-20">
+                <img class="ml30 _logo" src="img/logo2.png" alt="logo">
+            </div>
+            <div class="ui-col ui-col-80">
+                <p class="f12 plr20 khcolor">
+                    Uniwork，智能化组织管理助手，如果你也是管理者，欢迎点此下载应用
+                </p>
+            </div>
+        </a>
+    </div>
+</section>
+
+<script src="js/lib/zeptojs/zepto.min.js"></script>
+<script src="js/frozen.js"></script>
+<script src="js/tools/getUrlParmars.js"></script>
+<script src="js/tools/parameter.js"></script>
+<script src="js/tools/tips.js"></script>
+<script src="js/util/errorhandler.js"></script>
+<script src="js/tools/loadEnrollPage.js"></script>
+<script src="js/tools/lengthLimit.js"></script>
+
+</body>
+
+</html>
